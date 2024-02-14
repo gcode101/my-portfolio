@@ -1,0 +1,456 @@
+body{
+	background: #f5f5f6;
+	background-image: url('../images/bg-portfolio.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+nav{
+	background-color: #4c4b4bf7;
+}
+
+.navbar-nav li a{
+	color: rgba(255, 255, 255, 0.81);
+}
+
+.navbar-nav li a:hover{
+	color: rgba(220, 205, 205, 0.81);
+}
+
+h1, h2{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, h3, h4, h5{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-font{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;	
+}
+
+.intro-slide{
+	background-image: url('../images/intro-img.jpg');
+	background-color: #222221;
+	background-repeat: no-repeat;
+	background-position: center center;  
+	height: 995px;
+	background-size: contain;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#subtitle{
+	font-size: 1.3rem;
+}
+
+.about-slide{
+	background-image: url("../images/about-bg-img2.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.about-content{
+	padding-bottom: 240px;
+}
+
+.about-body p{
+	font-size: 1.3rem;
+}
+
+.about-body{
+	padding-bottom: 30px;
+}
+
+#profile-pic{
+	border-radius: 10px;
+	width: 335px;
+}
+
+.project-cards{
+	padding: 86px 0px 180px;
+}
+
+.portfolio-slide{
+	background-color: #000000cc;
+}
+
+.education-slide{
+	background-color: #fffffff7;
+}
+
+.education-row{
+	padding-bottom: 180px;
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-entry {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.education-entry h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.institution {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.location,
+.date {
+    margin-bottom: 10px;
+}
+
+.skills-list li{
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill-logo{
+	height: 40px;
+}
+
+.contact-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-details{
+	width: 450px;
+	padding: 95px 0 450px 0;
+}
+
+.contact-details a{
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	transition: color 0.3s ease;
+}
+
+.contact-details a:hover{
+	color: #91dde6;
+}
+
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.rights-reserved {
+    font-size: 0.9em;
+}
+
+/*-----------Animation Classes-------------*/
+.animate {
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+/* Fade In */
+.animate.fade {
+  animation-name: animate-fade;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Pop In */
+.animate.pop { animation-name: animate-pop; }
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Blur In */
+.animate.blur {
+  animation-name: animate-blur;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-blur {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+/* Glow In */
+.animate.glow {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+/* Grow In */
+.animate.grow { animation-name: animate-grow; }
+
+@keyframes animate-grow {
+  0% {
+    opacity: 0;
+    transform: scale(1, 0);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Splat In */
+.animate.splat { animation-name: animate-splat; }
+
+@keyframes animate-splat {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) rotate(20deg) translate(0, -30px);
+    }
+  70% {
+    opacity: 1;
+    transform: scale(1.1, 1.1) rotate(15deg);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1, 1.1) rotate(15deg) translate(0, -10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0) translate(0, 0);
+  }
+}
+
+/* Roll In */
+.animate.roll { animation-name: animate-roll; }
+
+@keyframes animate-roll {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0deg);
+  }
+}
+
+/* Flip In */
+.animate.flip {
+  animation-name: animate-flip;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes animate-flip {
+  0% {
+    opacity: 0;
+    transform: rotateX(-120deg) scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1, 1);
+  }
+}
+
+/* Spin In */
+.animate.spin {
+  animation-name: animate-spin;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes animate-spin {
+  0% {
+    opacity: 0;
+    transform: rotateY(-120deg) scale(0.9, .9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+}
+
+/* Slide In */
+.animate.slide { animation-name: animate-slide; }
+
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Drop In */
+.animate.drop { 
+  animation-name: animate-drop; 
+  animation-timing-function: cubic-bezier(.77, .14, .91, 1.25);
+}
+
+@keyframes animate-drop {
+0% {
+  opacity: 0;
+  transform: translate(0,-300px) scale(0.9, 1.1);
+}
+95% {
+  opacity: 1;
+  transform: translate(0, 0) scale(0.9, 1.1);
+}
+96% {
+  opacity: 1;
+  transform: translate(10px, 0) scale(1.2, 0.9);
+}
+97% {
+  opacity: 1;
+  transform: translate(-10px, 0) scale(1.2, 0.9);
+}
+98% {
+  opacity: 1;
+  transform: translate(5px, 0) scale(1.1, 0.9);
+}
+99% {
+  opacity: 1;
+  transform: translate(-5px, 0) scale(1.1, 0.9);
+}
+100% {
+  opacity: 1;
+  transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+/* Animation Delays */
+.delay-1 {
+  animation-delay: 0.6s;
+}
+.delay-2 {
+  animation-delay: 0.7s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate {
+    animation: none !important;
+  }
+}
+
+/* Adjust background size for large screens */
+@media (max-width: 1350px) {
+	.intro-slide{
+		background-position-y: top; 
+		align-items: flex-start;
+	}
+
+	.intro-info{
+		margin-top: 150px;
+	}
+}
+
+/* Adjustment for medium screens */
+@media (max-width: 1270px){
+	#subtitle {
+		font-size: 16px;
+	}
+
+	.intro-slide{
+		height: 640px;
+	}
+
+	.each-card{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+/* Adjustment for small screens */
+@media (max-width: 991px){
+	.about-content p{
+		font-size: 16px;
+	}
+
+	.about-slide{
+		background-size: contain;
+	}
+
+	#profile-pic{
+		width: auto;
+	}
+
+}
+
+/* Adjustment for small screens */
+@media (max-width: 750px){
+	#subtitle {
+		font-size: 16px;
+	}
+
+	.intro-slide{
+		height: 340px;
+	}
+
+	#profile-pic{
+		height: 250px;
+		border-radius: 50%;
+	}
+
+	.profile-photo{
+		display: flex;
+		justify-content: center;
+	}
+
+}

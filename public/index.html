@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Permanent+Marker&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/4b2368706e.js" crossorigin="anonymous"></script>
+		<!--Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js" ></script>
+	</head>
+
+	<body>
+		
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container-lg">
+				<a href="#top" class="navbar-brand">
+					<span class="fw-bold text-light">
+						GCort
+					</span>
+				</a>
+				<!-- toggle button-->
+				<button class="navbar-toggler" type="button" data-bs-target="#navbarCollapse" data-bs-toggle="collapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- navbar links-->
+				<div id="navbarCollapse" class="collapse navbar-collapse justify-content-end align-center">
+			      <ul class="navbar-nav">
+			        <li class="nav-item"><a class="nav-link fw-bold quicksand-font" href="#top" id="menu-home">Home</a></li>
+			        <li class="nav-item"><a class="nav-link fw-bold quicksand-font" href="#about" id="menu-about">About</a></li>
+			        <li class="nav-item"><a class="nav-link fw-bold quicksand-font" href="#portfolio" id="menu-portfolio">Portfolio</a></li>
+			        <li class="nav-item"><a class="nav-link fw-bold quicksand-font" href="#education" id="menu-education">Education</a></li>
+			        <li class="nav-item"><a class="nav-link fw-bold quicksand-font" href="#contact" id="menu-contact">Contact</a></li>
+			      </ul>
+		      	</div><!--navbar-collapse-->
+			</div><!--container-->
+		</nav>
+
+		<!-- Introduction Slide -->
+		<section id="top" class="intro-slide">
+				<div class="intro-info text-center text-light">
+					<h1 class="fw-semibold animated title">Guelmis Cortina</h1>
+					<p class="animated subtitle" id="subtitle"><span class="fw-semibold animated">Full Stack Web Developer</span> based in Miami, Florida</p>
+				</div>
+		</section>
+
+		<!-- About Slide -->
+		<section id="about" class="about-slide bg-light">
+			<div class="container-lg">
+				<div class="text-center p-5">
+					<h2>About</h2>
+				</div>
+				<div class="row">
+					<div class="profile-photo col-lg-4 col-md-4 col-sm pb-4">
+						<img src="images/profile-picture-short.jpg" alt="profile-photo" class="img-thumbnail animated" id="profile-pic"> 
+					</div>
+					<div class="about-content col-lg-8 col-md-8 col-sm">
+						<div class="card border-0 p-3 about-body animated">
+							<p>
+	                			Hello there! I'm Guelmis Cortina, a US Armed Forces veteran and Software Engineer with a bachelor’s degree in Computer Science. Currently, I call the vibrant city of Miami, Florida, my home.
+	            			</p>
+	            			<p>
+	                			My journey in the world of technology began during my time in the military, where I developed a deep appreciation for precision, discipline, and problem-solving. After transitioning to civilian life, I pursued my passion for coding and earned a degree in Computer Science.
+	            			</p>
+	            			<p>
+	                			 I bring proficiency in <span class="fw-semibold">Java, SQL, PHP, Javascript, React, Node JS, Express JS, and MongoDB</span>, coupled with hands-on experience collaborating with cross-disciplinary teams in an agile environment. My focus lies in designing and developing cutting-edge products and services that make a meaningful impact. With a strong foundation in Computer Science fundamentals, including object-oriented design, algorithm design, data structures, problem-solving, and complex analysis, I am driven to overcome challenges and create innovative solutions.
+	            			</p>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Portfolio Slide -->
+		<section id="portfolio" class="portfolio-slide">
+			<div class="container">
+				<div class="text-center text-light p-5">
+					<h2>Projects</h2>
+				</div>
+				<div class="row project-cards">
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm p-4 each-card">
+						<div class="card border-0" style="width: 18rem;">
+						  	<img src="images/class-enrollment-img.jpeg" class="card-img-top" alt="course-enrollment-img">
+						  	<div class="card-body">
+						    	<h5 class="card-title fw-bold">Course Enrollment Portal</h5>
+						    	<p class="card-text"> The enrollment portal is designed to facilitate user registration,
+									course enrollment, and manage course availability. <span class="text-info">Tech used: PHP, MySQL, HTML, CSS.</span>
+								</p>
+						    	<a href="#" class="btn btn-primary">Live Demo</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm p-4 each-card">
+						<div class="card border-0" style="width: 18rem;">
+						  	<img src="images/meme-gen-img.png" class="card-img-top" alt="meme-gen-img">
+						  	<div class="card-body">
+						    	<h5 class="card-title fw-bold">Meme Generator</h5>
+						    	<p class="card-text">Designed and implemented a dynamic meme generator that allows users to create and customize humorous memes with ease. <span class="text-info">Tech used: React.</span></p>
+						    	<a href="#" class="btn btn-primary">Live Demo</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm p-4 each-card">
+						<div class="card border-0" style="width: 18rem;">
+						  	<img src="images/digital-business-card-img.jpeg" class="card-img-top" alt="digital-business-card-img">
+						  	<div class="card-body">
+						    	<h5 class="card-title fw-bold">Digital Business Cards</h5>
+						    	<p class="card-text">Developed a modern digital business card platform that enables professionals to create and share personalized digital cards.<span class="text-info">Tech used: React.</span></p>
+						    	<a href="#" class="btn btn-primary">Live Demo</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm p-4 each-card">
+						<div class="card border-0" style="width: 18rem;">
+						  	<img src="images/coming-soon-img.jpg" class="card-img-top" alt="coming-soon-img">
+						  	<div class="card-body">
+						    	<h5 class="card-title fw-bold">Coming Soon...</h5>
+						    	<p class="card-text">Site still under construction. Check often for upcoming apps.</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education Slide -->
+	    <section id="education" class="education-slide">
+	        <div class="container">
+	          	<div class="text-center p-5">
+					<h2>Education</h2>
+				</div>
+				<div class="row education-row">
+					<div class="col-lg-6">
+			          	<div class="text-center p-4">
+							<h3 class="fw-bold">Formal Education</h3>
+						</div>
+						<div class="card bg-light p-4 border-0">
+							<div class="education-entry">
+				                <h4 class="fw-semibold">Bachelor of Science in Computer Science</h4>
+				                <p class="institution">University of Arizona Global Campus</p>
+				                <p class="location">Chandler, AZ</p>
+				                <p class="date">Graduation Date: 12/2023</p>
+				            </div>
+
+				        	<div class="education-entry">
+				                <h4 class="fw-semibold">Associate of Arts</h4>
+				                <p class="institution">Miami Dade College</p>
+				                <p class="location">Miami, FL</p>
+				                <p class="date">Graduation Date: 12/2009</p>
+				            </div>
+			           	</div>
+		            </div>
+		            <div class="col-lg-6">
+			          	<div class="text-center p-4">
+							<h3 class="fw-bold">Skills</h3>
+						</div>
+						<div class="card bg-light p-4 border-0">
+						<ul class="list-group skills-list">
+						  <li class="list-group-item">HTML
+						  	<img src="images/HTML5-logo.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-primary fw-semibold quicksand-font">CSS
+						  	<img src="images/CSS3-logo.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-secondary fw-semibold quicksand-font">JavaScript
+						  	<img src="images/JavaScript.webp" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item bg-dark text-light fw-semibold quicksand-font">React
+						  	<img src="images/React-icon.svg.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-success fw-semibold quicksand-font">Node JS
+						  	<img src="images/nodejs-logo.svg.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-warning fw-semibold quicksand-font">Express JS
+						  	<img src="images/express-js.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-info fw-semibold quicksand-font">MogoDB
+						  	<img src="images/mongodb-thumbnail.webp" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-danger fw-semibold quicksand-font">Java
+						  	<img src="images/java-logo.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						  <li class="list-group-item list-group-item-dark fw-semibold quicksand-font">PHP
+						  	<img src="images/PHP-logo.svg.png" class="skill-logo" alt="HTML5-logo">
+						  </li>
+						</ul>
+			           	</div>
+		            </div>
+				</div> <!--education-row-->
+	        </div>
+	    </section>
+
+	    <!-- Contact Slide -->
+	    <section id="contact" class="contact-slide bg-black">
+	    	<div class="container">
+	    		<div class="text-center text-light p-5">
+					<h2>Contact</h2>
+				</div>
+		        <div class="contact-container text-light text-center">
+		        	<div class="contact-desciption">
+		        		<p>Let's connect! Feel free to reach out to me through the following channels.</p>
+		        	</div>
+		            <div class="row contact-details">
+	                	<div class="col">
+	                		<address><a href="mailto:cguelmis@yahoo.com"> Email <i class="fa-regular fa-envelope"></i></a></address>
+	                	</div>
+	                	<div class="col">
+	                		<a href="https://github.com/gcode101">Github <i class="fa-brands fa-github"></i></a>
+	                	</div>
+	                	<div class="col">
+	                		<a href="https://www.linkedin.com/in/guelmis">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+	                	</div>
+	                	<div class="col">
+	                		<a href="https://twitter.com/cguelmis">Twitter <i class="fa-brands fa-square-twitter"></i></a>
+	                	</div>
+		            </div>
+		        </div>
+	    	</div>
+	    	
+	    </section>
+
+	    <footer>
+        	<div class="footer-container">
+            	<p class="rights-reserved">© 2024 Guelmis Cortina. All Rights Reserved.</p>
+        	</div>
+    	</footer>
+	</body>
+
+</html>
