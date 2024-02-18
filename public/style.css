@@ -37,16 +37,33 @@ p, h3, h4, h5{
 }
 
 .intro-slide{
-	background-image: url('../images/intro-img.jpg');
 	background-color: #222221;
-	background-repeat: no-repeat;
-	background-position: center center;  
-	height: 995px;
-	background-size: contain;
+}
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
 }
 
 #subtitle{
@@ -382,32 +399,20 @@ p, h3, h4, h5{
   animation-delay: 0.8s;
 }
 
+.delay-4 {
+  animation-delay: 0.9s;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   .animate {
     animation: none !important;
   }
 }
 
-/* Adjust background size for large screens */
-@media (max-width: 1350px) {
-	.intro-slide{
-		background-position-y: top; 
-		align-items: flex-start;
-	}
-
-	.intro-info{
-		margin-top: 150px;
-	}
-}
-
 /* Adjustment for medium screens */
 @media (max-width: 1270px){
 	#subtitle {
 		font-size: 16px;
-	}
-
-	.intro-slide{
-		height: 640px;
 	}
 
 	.each-card{
@@ -433,14 +438,10 @@ p, h3, h4, h5{
 
 }
 
-/* Adjustment for small screens */
+/* Adjustment for x-small screens */
 @media (max-width: 750px){
 	#subtitle {
 		font-size: 16px;
-	}
-
-	.intro-slide{
-		height: 340px;
 	}
 
 	#profile-pic{
