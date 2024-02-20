@@ -455,3 +455,24 @@ p, h3, h4, h5{
 	}
 
 }
+
+/* Adjustment for xx-small screens IPhone 14 */
+@media (max-width: 393px){
+  .contact-details{
+    max-width: 385px;
+  }
+
+  .intro-info{
+    width: 335px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
