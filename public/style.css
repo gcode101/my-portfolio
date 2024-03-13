@@ -457,7 +457,7 @@ p, h3, h4, h5{
 }
 
 /* Adjustment for xx-small screens IPhone 14 */
-@media (max-width: 393px){
+@media (max-width: 480px){
   .contact-details{
     max-width: 385px;
   }
